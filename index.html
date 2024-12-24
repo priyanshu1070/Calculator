@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <input id="display" type="text">
+        </div>
+        <div id="input-btns">
+            <button onclick="addToDisplay('(')" class="operator">(</button>
+            <button onclick="addToDisplay(')')" class="operator">)</button>
+            <button onclick="clean()" class="operator" id="clear">AC</button>
+            <button onclick="addToDisplay('/')" class="operator">/</button>
+            <button onclick="addToDisplay(9)" class="num" id="num9">9</button>
+            <button onclick="addToDisplay(8)" class="num" id="num8">8</button>
+            <button onclick="addToDisplay(7)" class="num" id="num7">7</button>
+            <button onclick="addToDisplay('*')" class="operator">*</button>
+            <button onclick="addToDisplay(6)" class="num" id="num6">6</button>
+            <button onclick="addToDisplay(5)" class="num" id="num5">5</button>
+            <button onclick="addToDisplay(4)" class="num" id="num4">4</button>
+            <button onclick="addToDisplay('+')" class="operator" id="+">+</button>
+            <button onclick="addToDisplay(3)" class="num" id="num3">3</button>
+            <button onclick="addToDisplay(2)" class="num" id="num2">2</button>
+            <button onclick="addToDisplay(1)" class="num" id="num1">1</button>
+            <button onclick="addToDisplay('-')" class="operator">-</button>
+            <button onclick="addToDisplay(0)" class="num" id="num0">0</button>
+            <span></span>
+            <button onclick="addToDisplay('.')" class="num" id=".">.</button>
+            <button onclick="calculate('=')" class="operator" id="=">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
